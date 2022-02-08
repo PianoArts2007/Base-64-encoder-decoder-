@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"><!--Noto Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"><!--Roboto Mono-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"><!--PT Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet"><!--Work Sans-->
+    <!--fonts-->
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base 64 encoder decoder</title>
+    <link rel="shortcut icon" type="image/png" href="phcw-vjc_400x400.png">
+</head>
+<body>
+    <h1>Base 64 encoder\decooder toll with opening/saving files</h1>
+    <br>
+    <h2>It can encode and decode only base 64</h2>
+    <div id="events">
+        <input type="file" id="input"><br>
+        <br>
+        <div id="misc">
+            <button id="download">Download file</button>
+        <input placeholder="Specify a name and file format before downloading" id="filename">
+        <button id="clearInput" onclick="clearInput()">Clear Input</button>
+        </div>
+        <br>
+        <div id="encoderdecoder">
+        <button id="encode">Encode</button>
+        <button id="decode">Decode</button>
+        <button id="cleartext" onclick="clearText()">Clear</button><br>
+        <br>
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
